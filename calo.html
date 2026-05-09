@@ -1,0 +1,1017 @@
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recarga de Extintores en Colombia | Servicio, Mantenimiento y Certificación</title>
+
+<meta name="description" content="Recarga de extintores en Colombia con servicio técnico certificado. Mantenimiento, inspección, certificación y venta de extintores para empresas, comercios y hogares.">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    background: rgba(247, 149, 2, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 14px 20px;
+
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* LOGO */
+.logo-menu {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/* MENU DESKTOP */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+
+        background: rgba(247, 149, 2, 0.85);
+
+        flex-direction: column;
+        text-align: center;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+    }
+
+    nav ul.active {
+        max-height: 400px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+/* ================= HERO ================= */
+#inicio {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+    background: radial-gradient(circle at center, #151515 0%, #000 70%);
+}
+
+/* 🔴 ILUMINACIÓN EMERGENCIA (ROJO SUAVE) */
+.ambient {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(237, 114, 6, 0.35), transparent 60%);
+    top: -250px;
+    left: -250px;
+    animation: pulse 5s infinite ease-in-out;
+}
+
+/* 🔥 SEGUNDA LUZ (PROFUNDIDAD) */
+.ambient2 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(239, 90, 4, 0.15), transparent 70%);
+    bottom: -200px;
+    right: -200px;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+/* 🧯 EXTINTOR PREMIUM */
+.extintor {
+    position: absolute;
+    width: 130px;
+    height: 300px;
+
+background: linear-gradient(180deg, #ff5500, #f0e002);
+    border-radius: 22px;
+
+    top: 50%;
+    left: 18%;
+    transform: translateY(-50%);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.6),
+        inset 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* cabeza del extintor */
+.extintor::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+    background: #3a3a3a;
+    top: -35px;
+    left: 22px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* manguera */
+.extintor::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 10px;
+    background: #1c1c1c;
+    top: 65px;
+    left: -95px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* CONTENIDO */
+.content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+}
+
+.content h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+/* BOTÓN PREMIUM */
+.btn {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #f14e02, #f74403);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+}
+
+/* ANIMACIONES LUZ */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.15); opacity: 1; }
+}
+
+/* ================= SECCIONES ================= */
+section {
+    padding: 90px 20px;
+}
+
+/* SOLO contenido interno centrado */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #eb8f05;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* ================= SERVICIOS ================= */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.card i {
+    font-size: 42px;
+    color: #f0620a;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ================= COBERTURA ================= */
+ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* ================= CONTACTO ================= */
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #eb0b0b;
+    box-shadow: 0 0 10px rgba(243, 177, 33, 0.2);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* ================= ANIMACIONES ================= */
+.anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.7s ease;
+}
+
+.anim.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 34px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+footer {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    color: #e48107;
+    font-size: 18px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.footer-box i {
+    margin-right: 8px;
+    color: #e48107;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 13px;
+    opacity: 0.7;
+}
+.brand {
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    color: #ea8015;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+/* 🔥 LOGO CORPORATIVO */
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #d97c04;
+    position: relative;
+    display: inline-block;
+
+    animation: fadeDown 1s ease-out;
+}
+
+/* BADGE CORPORATIVO */
+.badge {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-top: 6px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+
+/* SLOGAN */
+.slogan {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(252, 159, 0, 0.65);
+    margin-top: 15px;
+}
+
+/* TITULO PRINCIPAL */
+.content h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    animation: fadeUp 1.2s ease-out;
+}
+
+/* TEXTO */
+.content p {
+    font-size: 18px;
+    opacity: 0.85;
+    animation: fadeUp 1.4s ease-out;
+}
+
+/* BOTÓN */
+.btn {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #f1b604, #e78608);
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    animation: fadeUp 1.6s ease-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ANIMACIONES */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* LOGO MENU */
+.logo-menu {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/* ICONO HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MENU NORMAL */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* UL */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(183, 28, 28, 0.98);
+
+        flex-direction: column;
+        text-align: center;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: 0.4s ease;
+    }
+
+    nav ul.active {
+        max-height: 400px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+<nav>
+
+<div class="logo-menu">Extintores Calo</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+
+<ul id="menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#cobertura">Cobertura</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#terminos">Términos</a></li>
+    <li><a href="#politica">Privacidad</a></li>
+</ul>
+
+</nav>
+
+<section id="inicio">
+
+    <div class="ambient"></div>
+    <div class="ambient2"></div>
+    <div class="extintor"></div>
+
+    <div class="content">
+
+        <div class="logo">
+            Extintores Calo
+            <span class="badge">Recarga en Linea</span>
+        </div>
+
+        <div class="slogan">Protección de Vehiculos</div>
+
+        <h1>Recarga de Extintores Para Vehiculos</h1>
+
+        <p>Antioquia · Cundinamarca · Valle del Cauca</p>
+
+        <button class="btn" onclick="cotizar()">Solicitar Cotización</button>
+
+    </div>
+
+</section>
+
+<section id="servicios" class="anim">
+    <div class="container">
+      
+<h2>Servicios</h2>
+
+<p style="text-align:center; max-width:700px; margin:0 auto 40px; font-size:16px; color:#555;">
+Especialistas en recarga, mantenimiento y certificación de extintores para empresas, conjuntos residenciales, locales comerciales e industrias en Cundinamarca, Antioquia y Valle del Cauca.
+</p>
+
+<div class="servicios">
+
+<div class="card">
+<i class="fas fa-fire-extinguisher"></i>
+<h3>Recarga de Extintores ABC</h3>
+<p>Recarga certificada para extintores multipropósito bajo normativa vigente.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-wind"></i>
+<h3>Recarga CO₂</h3>
+<p>Servicio especializado para extintores de dióxido de carbono.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-oil-can"></i>
+<h3>Recarga Tipo K</h3>
+<p>Recarga para extintores de cocina industrial y aceites combustibles.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-tools"></i>
+<h3>Mantenimiento de Extintores</h3>
+<p>Inspección y mantenimiento preventivo para garantizar su funcionamiento.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-search"></i>
+<h3>Inspección Técnica</h3>
+<p>Evaluación detallada del estado físico y operativo del extintor.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-certificate"></i>
+<h3>Certificación</h3>
+<p>Emitimos certificados de cumplimiento según normativas de seguridad.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-truck"></i>
+<h3>Recolección y Entrega</h3>
+<p>Servicio a domicilio para recoger y entregar tus extintores rápidamente.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-box"></i>
+<h3>Venta de Extintores</h3>
+<p>Equipos nuevos certificados para hogares, oficinas e industrias.</p>
+</div>
+
+</div>
+</div>
+</section>
+<!-- COBERTURA -->
+<section id="cobertura" class="anim">
+      <div class="container">
+
+<h2>Cobertura</h2>
+
+<p style="text-align:center; max-width:750px; margin:0 auto 40px; font-size:16px; color:#555;">
+Ofrecemos servicio de recarga, mantenimiento e inspección de extintores en diferentes ciudades de Colombia, con atención ágil para empresas, conjuntos residenciales y comercios.
+</p>
+
+<div class="servicios">
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Bogotá D.C.</h3>
+<p>Atención rápida para oficinas, empresas, conjuntos y locales comerciales.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Medellín</h3>
+<p>Servicio técnico certificado de recarga y mantenimiento de extintores.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Cali</h3>
+<p>Soporte especializado para industrias, bodegas y establecimientos.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Pereira</h3>
+<p>Atención a domicilio con recolección y entrega de equipos contra incendio.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Manizales</h3>
+<p>Inspección técnica y mantenimiento preventivo para todo tipo de extintores.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Barranquilla</h3>
+<p>Servicios de seguridad contra incendios para empresas y comercios.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Cartagena</h3>
+<p>Recarga certificada y asesoría en protección contra incendios.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Bucaramanga</h3>
+<p>Mantenimiento y certificación de extintores con atención oportuna.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="anim">
+      <div class="container">
+<h2>Contáctanos</h2>
+
+<p style="text-align:center; max-width:750px; margin:0 auto 40px; font-size:16px; color:#555;">
+Comunícate con nosotros para cotizaciones, mantenimiento o recarga de extintores. Atención rápida en Cundinamarca, Antioquia y Valle del Cauca.
+</p>
+
+<div class="servicios">
+
+<div class="card">
+<i class="fas fa-phone-alt"></i>
+<h3>Teléfono</h3>
+<p>322 551 9289</p>
+</div>
+
+<div class="card">
+<i class="fas fa-envelope"></i>
+<h3>Correo</h3>
+<p>extintorescalo@gmail.com</p>
+</div>
+
+<div class="card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Dirección</h3>
+<p>Cra 2 #16-72 <br> Cali, Valle del Cauca</p>
+</div>
+
+</div>
+
+</div></section>
+<section id="servicio-adicional" class="anim">
+
+<h2>Servicio Adicional</h2>
+
+<p style="text-align:center; max-width:750px; margin:0 auto 40px; font-size:16px; color:#555;">
+Ofrecemos soluciones rápidas y flexibles para facilitar el pago de nuestros servicios de recarga y mantenimiento de extintores en cualquier ciudad.
+</p>
+
+<div class="servicios">
+      <div class="container">
+
+<div class="card">
+<i class="fas fa-bolt"></i>
+<h3>Atención Prioritaria</h3>
+<p>Servicio rápido para empresas y clientes que requieren atención urgente en sitio.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-truck-fast"></i>
+<h3>Servicio Express</h3>
+<p>Recogida y entrega prioritaria de extintores con tiempos reducidos de respuesta.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-mobile-alt"></i>
+<h3>Pago Digital</h3>
+<p>Facilitamos pagos rápidos y seguros a través de medios digitales como Recarga Nequi PSE.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-wallet"></i>
+<h3>Recarga Nequi PSE</h3>
+<p>
+Realiza tu recarga nequi de forma inmediata desde tu celular.
+</p>
+</div>
+
+</div>
+
+</div></section>
+<!-- TERMINOS -->
+<section id="terminos" class="anim">
+      <div class="container">
+
+<h2>Términos y Condiciones</h2>
+
+<p style="text-align:center; max-width:750px; margin:0 auto 40px; font-size:16px; color:#555;">
+Nuestros servicios de recarga, mantenimiento e inspección de extintores se realizan bajo estándares técnicos y normativas de seguridad vigentes en Colombia, garantizando calidad, cumplimiento y confiabilidad en cada proceso.
+</p>
+
+<div class="servicios">
+
+<div class="card">
+<i class="fas fa-clipboard-check"></i>
+<h3>Prestación del Servicio</h3>
+<p>Todos los trabajos son ejecutados por personal capacitado siguiendo procedimientos técnicos y protocolos de seguridad establecidos.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-clock"></i>
+<h3>Tiempos de Entrega</h3>
+<p>Los tiempos de entrega pueden variar según la cantidad de extintores, el tipo de servicio solicitado y la ubicación del cliente.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-shield-alt"></i>
+<h3>Garantía del Servicio</h3>
+<p>Garantizamos la calidad de la recarga y mantenimiento realizados, siempre que el equipo sea utilizado correctamente y bajo condiciones normales.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-file-contract"></i>
+<h3>Certificación Técnica</h3>
+<p>Los certificados se emiten únicamente a extintores que aprueben las inspecciones y cumplan con las condiciones técnicas requeridas.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-tools"></i>
+<h3>Condición de los Equipos</h3>
+<p>Los extintores con daños estructurales, corrosión avanzada o fallas de seguridad podrán ser rechazados para recarga o certificación.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-handshake"></i>
+<h3>Aceptación de Condiciones</h3>
+<p>Al contratar nuestros servicios, el cliente acepta los procedimientos técnicos, políticas de servicio y condiciones operativas establecidas.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- POLITICA -->
+<section id="politica" class="anim">
+      <div class="container">
+
+<h2>Política de Privacidad</h2>
+
+<p style="text-align:center; max-width:750px; margin:0 auto 40px; font-size:16px; color:#555;">
+Nos comprometemos a proteger la información personal de nuestros clientes, garantizando un tratamiento responsable, seguro y confidencial de los datos suministrados a través de nuestros canales de atención.
+</p>
+
+<div class="servicios">
+
+<div class="card">
+<i class="fas fa-user-shield"></i>
+<h3>Protección de Datos Personales</h3>
+<p>La información recopilada es almacenada de manera segura y utilizada únicamente para fines relacionados con nuestros servicios.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-lock"></i>
+<h3>Confidencialidad de la Información</h3>
+<p>Mantenemos estrictos controles de confidencialidad para evitar el acceso no autorizado a los datos de nuestros clientes.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-database"></i>
+<h3>Finalidad del Uso de Datos</h3>
+<p>Los datos personales se utilizan para cotizaciones, programación de servicios, atención al cliente y envío de información relacionada.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-mobile-alt"></i>
+<h3>Comunicación y Contacto</h3>
+<p>El cliente autoriza el contacto mediante llamadas, correo electrónico, WhatsApp u otros medios digitales para fines informativos y operativos.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-user-check"></i>
+<h3>Autorización del Usuario</h3>
+<p>Al proporcionar sus datos, el usuario acepta el tratamiento de la información conforme a esta política de privacidad.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-shield-alt"></i>
+<h3>Medidas de Seguridad</h3>
+<p>Aplicamos medidas técnicas y administrativas orientadas a proteger la integridad y seguridad de la información suministrada.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+    <div class="footer-box">
+        <h3>Recarga de Extintores</h3>
+        <p>
+            Servicio especializado en recarga, mantenimiento y certificación de extintores en
+            Cundinamarca, Antioquia y Valle del Cauca.
+        </p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-phone"></i> 322 551 9289</p>
+        <p><i class="fas fa-envelope"></i> extintorescalo@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Ubicación</h3>
+        <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Cra 2 #16-72<br>
+            Cali, Valle del Cauca.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <p>© 2026 Extintores Calo - Todos los derechos reservados</p>
+</div>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/573225519289">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+
+// BOTON WHATSAPP RAPIDO
+function cotizar(){
+    window.open("https://wa.me/573225519289?text=Hola quiero cotizar recarga de extintor");
+}
+
+// FORMULARIO A WHATSAPP
+function enviarWhatsApp(){
+    let nombre = document.getElementById("nombre").value;
+    let ciudad = document.getElementById("ciudad").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let url = "https://wa.me/573225519289?text="
+    + "Nombre: " + nombre + "%0A"
+    + "Ciudad: " + ciudad + "%0A"
+    + "Mensaje: " + mensaje;
+
+    window.open(url);
+}
+
+// ANIMACIONES
+const anims = document.querySelectorAll(".anim");
+
+window.addEventListener("scroll", () => {
+    anims.forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add("active");
+        }
+    });
+});
+
+</script><script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}</script>
+
+</body></html>
